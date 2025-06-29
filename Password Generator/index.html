@@ -1,0 +1,44 @@
+<!--Remember to link this up to your backend so when you generate 
+it stores the password on a text file(encryptedd text file)-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <form action="#" method="get">
+        <label for="passwordLength">#Lenght</label>
+        <input
+          type="number"
+          name="passwordLength"
+          id="passwordLength"
+          required
+        />
+        <br /><br />
+        <input type="checkbox" name="radio" id="upperCaseChars" />
+        <label for="upperCaseChars">Include Upper Case</label>
+        <br />
+        <input type="checkbox" name="radio1" id="lowerCaseChars" />
+        <label for="lowerCaseChars">Include Lower Case</label>
+        <br />
+        <input type="checkbox" name="radio2" id="numbers" />
+        <label for="numbers">Include Numbers</label>
+        <br />
+        <input type="checkbox" name="radio3" id="symbols" />
+        <label for="symbols">Include Symbols</label>
+        <br /><br />
+        <button type="button" onclick="userRequest()" id="button">
+          Generate
+        </button>
+      </form>
+
+      <p id="password">Password</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

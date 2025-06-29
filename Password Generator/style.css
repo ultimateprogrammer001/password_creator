@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: green;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 10em;
+  padding: 1em;
+}
+#passwordLength{
+    padding: 0.5em;
+    margin: 1em;
+}
+#button {
+  display: flex;
+  justify-self: center;
+  padding: 8px 15px;
+  margin-top: 0.9em;
+}
+#password{
+    text-align: center;
+}
